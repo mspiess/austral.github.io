@@ -28,7 +28,7 @@ type.
 For example, you could have a type class for types that can be printed:
 
 ```austral
-typeclass Printable(T: Type)
+typeclass Printable(T: Type) is
     generic [R: Region]
     function printRef(ref: &[T, R]): Unit;
 end;
